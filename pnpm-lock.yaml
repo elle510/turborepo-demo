@@ -49,6 +49,7 @@ importers:
       '@types/react-dom': ^18.0.7
       eslint: 7.32.0
       eslint-config-custom: workspace:*
+      hooks: workspace:*
       next: ^13.1.1
       react: 18.2.0
       react-dom: 18.2.0
@@ -56,6 +57,7 @@ importers:
       typescript: ^4.5.3
       ui: workspace:*
     dependencies:
+      hooks: link:../../packages/hooks
       next: 13.1.6_pjwopsidmaokadturxaafygjp4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -85,6 +87,22 @@ importers:
       eslint-config-turbo: 0.0.7_eslint@7.32.0
       eslint-plugin-react: 7.31.8_eslint@7.32.0
     devDependencies:
+      typescript: 4.9.5
+
+  packages/hooks:
+    specifiers:
+      '@types/node': ^17.0.12
+      '@types/react': ^18.0.17
+      '@types/react-dom': ^18.0.6
+      react: ^18.2.0
+      tsconfig: workspace:*
+      typescript: ^4.5.2
+    devDependencies:
+      '@types/node': 17.0.45
+      '@types/react': 18.0.27
+      '@types/react-dom': 18.0.10
+      react: 18.2.0
+      tsconfig: link:../tsconfig
       typescript: 4.9.5
 
   packages/tsconfig:
