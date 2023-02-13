@@ -3,9 +3,9 @@ import React from 'react';
 import { Button } from 'ui';
 
 const Docs: React.FC = () => {
-  const abc = 1;
+  // const abc = 1;
   console.log('aaa');
-  const cccd = 1;
+  // const cccd = 1;
 
   return (
     <div>
