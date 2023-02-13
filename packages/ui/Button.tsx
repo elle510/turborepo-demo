@@ -1,9 +1,17 @@
 import * as React from "react";
 
-export const Button = () => {
-  console.log("aaa");
-  // const abc = 1;
-  // const dddc = 2;
+export interface ButtonProps {
+  primary?: boolean;
+  label?: string;
+  size?: "small" | "medium" | "large";
+}
+export const Button: React.FC<ButtonProps> = ({
+  primary,
+  label = "Button",
+  size,
+}) => {
+  console.log("primary", primary);
+  console.log("size", size);
 
-  return <button>Boop</button>;
+  return <button>{label}</button>;
 };
