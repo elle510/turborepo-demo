@@ -1,14 +1,14 @@
-import { useCallback } from "react";
+import React, { useCallback } from 'react';
 
-import { Button } from "ui";
+import { Button } from 'ui';
 // import { useTest } from "hooks";
-import useTest from "hooks/useTest";
+import useTest from 'hooks/useTest';
 
 // TODO:
 // 1. packages 안에 프로젝트 생성하는 명령어(배포하는 프로젝트, 배포안하는 프로젝트)
 // 2. apps 에서 새로 추가된 packages 설치하는 방법
-export default function Web() {
-  const [value, onChange] = useTest("test");
+const Web: React.FC = () => {
+  const [value, onChange] = useTest('test');
 
   const handleChange = useCallback(() => {
     onChange(`test${Math.random()}`);
@@ -24,4 +24,6 @@ export default function Web() {
       </div>
     </div>
   );
-}
+};
+
+export default Web;

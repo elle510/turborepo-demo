@@ -1,26 +1,26 @@
 module.exports = {
   // extends: ["next", "turbo", "prettier"],
   extends: [
-    "plugin:react/recommended",
-    "standard-with-typescript",
-    "plugin:prettier/recommended",
-    "plugin:@next/next/recommended",
+    'plugin:react/recommended',
+    'standard-with-typescript',
+    'plugin:prettier/recommended',
+    'plugin:@next/next/recommended',
   ],
-  plugins: ["react", "react-hooks"],
+  plugins: ['react', 'react-hooks'],
   parserOptions: {
-    project: "tsconfig.json",
+    project: 'tsconfig.json',
     // tsconfigRootDir: __dirname,
-    sourceType: "module",
+    sourceType: 'module',
     // ecmaVersion: "latest",
     babelOptions: {
-      presets: [require.resolve("next/babel")],
+      presets: [require.resolve('next/babel')],
     },
   },
   rules: {
     // "@next/next/no-html-link-for-pages": "off",
     // "react/jsx-key": "off",
 
-    "@typescript-eslint/consistent-type-assertions": "off",
+    '@typescript-eslint/consistent-type-assertions': 'off',
     // "no-console": "error",
     // "no-unused-vars": [
     //   "error",

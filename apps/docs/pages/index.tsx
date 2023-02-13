@@ -1,8 +1,10 @@
-import { Button } from "ui";
+import React from 'react';
 
-export default function Docs() {
+import { Button } from 'ui';
+
+const Docs: React.FC = () => {
   const abc = 1;
-  console.log("aaa");
+  console.log('aaa');
   const cccd = 1;
 
   return (
@@ -11,4 +13,6 @@ export default function Docs() {
       <Button />
     </div>
   );
-}
+};
+
+export default Docs;
