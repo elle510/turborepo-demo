@@ -4,6 +4,7 @@
   "extends": "./base.json",
   "compilerOptions": {
     "allowJs": true,
+    "allowSyntheticDefaultImports": true,
     "declaration": false,
     "declarationMap": false,
     "incremental": true,

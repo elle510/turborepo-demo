@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'ui';
+import { Link } from 'ui';
 import './App.css';
 
 const App: React.FC = () => {
@@ -11,7 +11,7 @@ const App: React.FC = () => {
           <div className="Turborepo">Turborepo Example</div>
         </h1>
         {/* 컴파일 에러로 인해 주석 */}
-        {/* <div>
+        <div>
           <Link className="App-link" href="https://turbo.build/repo">
             Turborepo Docs
           </Link>
@@ -19,7 +19,7 @@ const App: React.FC = () => {
           <Link className="App-link" href="https://reactjs.org">
             React Docs
           </Link>
-        </div> */}
+        </div>
       </header>
     </div>
   );
