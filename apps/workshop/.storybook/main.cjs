@@ -24,7 +24,7 @@ module.exports = {
     // },
     ui: {
       title: 'UI',
-      url: process.env.NODE_ENV === 'development' ? 'http://localhost:6007' : 'ui/',
+      url: process.env.NODE_ENV === 'development' ? 'http://localhost:7006' : 'ui/',
     },
   },
 };
