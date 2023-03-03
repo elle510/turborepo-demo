@@ -19,12 +19,11 @@ module.exports = {
   rules: {
     // "@next/next/no-html-link-for-pages": "off",
     // "react/jsx-key": "off",
+    'react/react-in-jsx-scope': 'off',
 
     '@typescript-eslint/consistent-type-assertions': 'off',
-    // "no-console": "error",
-    // "no-unused-vars": [
-    //   "error",
-    //   { vars: "all", args: "after-used", ignoreRestSiblings: true },
-    // ],
+    '@typescript-eslint/consistent-type-imports': 'off',
+    // 'no-console': 'error',
+    // 'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
   },
 };

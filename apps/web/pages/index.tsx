@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import { Button } from 'ui';
+import { Button, Link } from 'ui';
 // import { useTest } from "hooks";
 import useTest from 'hooks/useTest';
 
@@ -21,6 +21,15 @@ const Web: React.FC = () => {
       <div>
         {value} <br />
         <button onClick={handleChange}>Click!!</button>
+      </div>
+      <div>
+        <Link className="App-link" href="https://turbo.build/repo">
+          Turborepo Docs
+        </Link>
+        <span> | </span>
+        <Link className="App-link" href="https://reactjs.org">
+          React Docs
+        </Link>
       </div>
     </div>
   );
