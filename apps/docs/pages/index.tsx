@@ -1,8 +1,9 @@
+import { NextPage } from 'next';
 import React from 'react';
 
 import { Button } from 'ui';
 
-const Docs: React.FC = () => {
+const Docs: NextPage = () => {
   const abc = 1;
   console.log('aaa');
   const cccd = 1;
