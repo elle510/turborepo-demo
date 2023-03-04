@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { NextPage } from 'next';
 
-import { Button, Link } from 'ui';
+import { Button, Card, Link } from 'ui';
 // import { useTest } from "hooks";
 import useTest from 'hooks/useTest';
 
@@ -32,6 +32,7 @@ const Web: NextPage = () => {
           React Docs
         </Link>
       </div>
+      <Card title="Title" href="http://naver.com" cta="cta content" />
     </div>
   );
 };
