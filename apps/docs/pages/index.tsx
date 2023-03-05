@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import React from 'react';
 
 import { Button } from 'ui';
+import { Button as TailButton } from 'ui-tailwind';
 
 const Docs: NextPage = () => {
   const abc = 1;
@@ -12,6 +13,7 @@ const Docs: NextPage = () => {
     <div>
       <h1>Docs</h1>
       <Button />
+      <TailButton label="TailButton" />
     </div>
   );
 };

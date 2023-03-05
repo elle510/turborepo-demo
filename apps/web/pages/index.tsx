@@ -2,6 +2,7 @@ import React, { useCallback } from 'react';
 import { NextPage } from 'next';
 
 import { Button, Card, Link } from 'ui';
+import { Card as TailCard } from 'ui-tailwind';
 // import { useTest } from "hooks";
 import useTest from 'hooks/useTest';
 
@@ -33,6 +34,7 @@ const Web: NextPage = () => {
         </Link>
       </div>
       <Card title="Title" href="http://naver.com" cta="cta content" />
+      <TailCard title="Tail-Title" href="http://naver.com" cta="cta content" />
     </div>
   );
 };
