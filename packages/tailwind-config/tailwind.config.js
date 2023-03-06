@@ -16,6 +16,8 @@ module.exports = {
       colors: {
         brandblue: colors.blue[500],
         brandred: colors.red[500],
+        electric: '#db00ff',
+        ribbon: '#0047ff',
       },
     },
   },
