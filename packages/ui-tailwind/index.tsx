@@ -2,7 +2,7 @@
 // import * as React from 'react';
 
 // styles
-// import './styles.css';
+import './styles.css';
 
 export * from './Button';
 export * from './Link';

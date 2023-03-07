@@ -1,14 +1,20 @@
 import React, { useCallback } from 'react';
 import { NextPage } from 'next';
+import tw from 'twin.macro';
 
 import { Button, Card, Link } from 'ui';
 import { Card as TailCard } from 'ui-tailwind';
 // import { useTest } from "hooks";
 import useTest from 'hooks/useTest';
 
-// TODO:
-// 1. packages 안에 프로젝트 생성하는 명령어(배포하는 프로젝트, 배포안하는 프로젝트)
-// 2. apps 에서 새로 추가된 packages 설치하는 방법
+const styles = {
+  // Move long class sets out of jsx to keep it scannable
+  container: ({ hasBackground }: { hasBackground: boolean }) => [
+    tw`flex flex-col items-center justify-center h-screen`,
+    hasBackground && tw`bg-gradient-to-b from-electric to-ribbon`,
+  ],
+};
+
 const Web: NextPage = () => {
   const [value, onChange] = useTest('test');
 
@@ -17,10 +23,10 @@ const Web: NextPage = () => {
   }, [onChange]);
 
   return (
-    <div>
+    <div css={styles.container({ hasBackground: true })}>
       <h1 className="text-3xl font-bold underline">Web</h1>
       <Button />
-      <div>
+      <div tw="flex flex-col justify-center h-full gap-y-5">
         {value} <br />
         <button onClick={handleChange}>Click!!</button>
       </div>
