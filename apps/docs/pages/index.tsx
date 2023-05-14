@@ -7,7 +7,7 @@ import { Button as TailButton } from 'ui-tailwind';
 const Docs: NextPage = () => {
   const abc = 1;
   console.log('aaa');
-  const cccd = 1;
+  // const cccd = 1;
 
   return (
     <div>
